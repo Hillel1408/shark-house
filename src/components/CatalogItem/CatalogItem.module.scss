@@ -1,2 +1,42 @@
-.CatalogItem {
+.catalog {
+    &Item {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        & > img {
+            width: 100%;
+            height: 254px;
+            object-fit: cover;
+        }
+        &Title {
+            color: #c0b1a3;
+            font-size: 35px;
+            line-height: 40px;
+        }
+        &Images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        &Image {
+            width: 48px;
+            cursor: pointer;
+            img {
+                height: 47px;
+                object-fit: cover;
+            }
+        }
+        &Flex {
+            display: flex;
+            justify-content: space-around;
+        }
+        &Btn {
+            background-color: #ecebe9;
+            text-transform: uppercase;
+            color: #c0b1a3;
+            font-size: 20px;
+            padding: 0 30px;
+            border-radius: 10px;
+        }
+    }
 }
