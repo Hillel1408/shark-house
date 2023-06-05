@@ -1,0 +1,24 @@
+.delivery {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    &Text {
+        color: #c0b1a3;
+        font-size: 45px;
+        line-height: 54px;
+    }
+    &Block {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+    &SubTitle {
+        text-decoration: underline;
+    }
+    &List {
+        padding-left: 40px;
+        li {
+            list-style: disc;
+        }
+    }
+}

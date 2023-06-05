@@ -33,10 +33,12 @@ function Header() {
                     <nav className={styles.headerNav}>
                         <ul>
                             <li>
-                                <NavLink to="/">О нас</NavLink>
+                                <NavLink to="/about-us">О нас</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/">Доставка и гарантия</NavLink>
+                                <NavLink to="/delivery">
+                                    Доставка и гарантия
+                                </NavLink>
                             </li>
                             <li>
                                 <NavLink to="/">Каталог</NavLink>
