@@ -1,15 +1,10 @@
-$fontFamily: 'Tahoma', sans-serif;
-$minWidth: 320px;
-$maxWidthContainer: 1160px;
-$md1: 1280px;
-
 @import 'null';
 @import 'fonts';
 
 ._container {
-    max-width: $maxWidthContainer;
+    max-width: 1160px;
     margin: 0 auto;
-    @media (max-width: $md1) {
+    @media (max-width: 1280px) {
         max-width: none;
         padding: 0 60px;
     }

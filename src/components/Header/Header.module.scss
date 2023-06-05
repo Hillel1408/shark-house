@@ -1,0 +1,41 @@
+.header {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background-color: #e5e5e5;
+    &Container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &Flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &Nav {
+        ul {
+            display: flex;
+            gap: 65px;
+            li {
+                a {
+                    font-weight: 700;
+                    color: #c0b1a3;
+                    font-size: 42px;
+                }
+            }
+        }
+    }
+    &SocialMedia {
+        display: flex;
+        gap: 22px;
+        align-items: center;
+        justify-content: flex-end;
+        & > a {
+            color: #c0b1a3;
+            font-size: 42px;
+        }
+        ul {
+            display: flex;
+            gap: 15px;
+        }
+    }
+}
