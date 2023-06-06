@@ -1,7 +1,7 @@
 @import 'null';
 @import 'fonts';
 
-main {
+.main {
     padding-top: 61px;
     padding-bottom: 24px;
 }
@@ -10,7 +10,12 @@ main {
     margin: 0 auto;
     @media (max-width: 1280px) {
         max-width: none;
-        padding: 0 60px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @media (max-width: 810px) {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 .title {
@@ -43,15 +48,21 @@ main {
     & > input:not([type='checkbox']),
     & > div {
         width: 500px;
-        height: 73px;
+        min-height: 73px;
         background: #ecebe9;
         border-radius: 20px;
-    }
-    & > div {
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
         color: #8d8989;
+        @media (max-width: 570px) {
+            width: 100%;
+        }
+    }
+    & > input:not([type='checkbox']) {
+        padding-left: 30px;
+    }
+    & > div {
         display: flex;
         align-items: center;
         text-align: left;
@@ -63,5 +74,22 @@ main {
         height: 140px;
         background: #ecebe9;
         border-radius: 20px;
+        padding: 30px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #8d8989;
+        resize: none;
+        @media (max-width: 570px) {
+            width: 100%;
+        }
+    }
+    @media (max-width: 810px) {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+    @media (max-width: 570px) {
+        width: 100%;
+        font-size: 22px;
     }
 }

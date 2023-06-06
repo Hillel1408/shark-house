@@ -3,7 +3,7 @@ import styles from './Delivery.module.scss';
 
 function Delivery() {
     return (
-        <div className={classNames('_container', styles.delivery)}>
+        <div className={classNames(styles.delivery)}>
             <h1 className="title">Доставка и гарантия.</h1>
             <div className={styles.deliveryBlock}>
                 <div>

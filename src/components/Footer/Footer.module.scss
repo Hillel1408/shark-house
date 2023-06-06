@@ -2,4 +2,12 @@
     padding-top: 28px;
     padding-bottom: 28px;
     background-color: #e5e5e5;
+    &Logo {
+        @media (max-width: 1080px) {
+            width: 268px;
+        }
+        @media (max-width: 810px) {
+            width: 150px;
+        }
+    }
 }

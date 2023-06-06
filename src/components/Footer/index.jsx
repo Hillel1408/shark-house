@@ -6,7 +6,7 @@ function Footer() {
         <footer className={styles.footer}>
             <div className="_container">
                 <NavLink to="/">
-                    <img src="/logo.png" alt="" />
+                    <img className={styles.footerLogo} src="/logo.png" alt="" />
                 </NavLink>
             </div>
         </footer>

@@ -4,7 +4,7 @@ import styles from './Order.module.scss';
 
 function Order() {
     return (
-        <div className={classNames('_container', styles.order)}>
+        <div className={classNames(styles.order)}>
             <form action="">
                 <label className="label">
                     ФИО

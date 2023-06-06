@@ -3,7 +3,7 @@ import styles from './AboutUs.module.scss';
 
 function AboutUs() {
     return (
-        <div className={classNames('_container', styles.aboutUs)}>
+        <div className={classNames(styles.aboutUs)}>
             <h1 className="title">О нас.</h1>
             <p className="text">
                 Shark House — российский производитель, импортер и оптовый

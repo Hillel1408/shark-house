@@ -1,16 +1,39 @@
+import { useEffect, useRef } from 'react';
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 import styles from './Header.module.scss';
 
 function Header() {
+    const socialMediaRef = useRef(null);
+
+    useEffect(() => {
+        const a = () => {
+            if (window.innerWidth <= 1080 && socialMediaRef.current) {
+                socialMediaRef.current.remove();
+                const ab = document.querySelector('.main');
+                ab && ab.prepend(socialMediaRef.current);
+            }
+            if (window.innerWidth > 1080 && socialMediaRef.current) {
+                const ab = document.querySelector('.header-flex');
+                ab && ab.prepend(socialMediaRef.current);
+            }
+        };
+        window.addEventListener('resize', a);
+        a();
+        return () => window.addEventListener('resize', a);
+    }, []);
+
     return (
         <header className={styles.header}>
             <div className={classNames('_container', styles.headerContainer)}>
                 <NavLink to="/">
-                    <img src="/logo.png" alt="" />
+                    <img className={styles.headerLogo} src="/logo.png" alt="" />
                 </NavLink>
-                <div className={styles.headerFlex}>
-                    <div className={styles.headerSocialMedia}>
+                <div className={classNames(styles.headerFlex, 'header-flex')}>
+                    <div
+                        ref={socialMediaRef}
+                        className={styles.headerSocialMedia}
+                    >
                         <ul>
                             <li>
                                 <a href="/">

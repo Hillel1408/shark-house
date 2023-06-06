@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { Header } from './components/Header';
 import { AboutUs } from './pages/AboutUs';
 import { Delivery } from './pages/Delivery';
@@ -11,7 +12,7 @@ function App() {
     return (
         <Router basename="shark-house">
             <Header />
-            <main>
+            <main className={classNames('_container', 'main')}>
                 <Routes>
                     <Route exact path="/" element={<Catalog />} />
                     <Route path="/about-us" element={<AboutUs />} />
