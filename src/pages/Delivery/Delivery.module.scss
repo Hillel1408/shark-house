@@ -5,12 +5,30 @@
     &Text {
         color: #c0b1a3;
         font-size: 45px;
-        line-height: 54px;
+        line-height: calc(54 / 45 * 100%);
+        @media (max-width: 1280px) {
+            font-size: 40px;
+        }
+        @media (max-width: 810px) {
+            font-size: 30px;
+        }
+        @media (max-width: 570px) {
+            font-size: 20px;
+        }
     }
     &Block {
         display: flex;
         flex-direction: column;
         gap: 80px;
+        @media (max-width: 1280px) {
+            gap: 50px;
+        }
+        @media (max-width: 810px) {
+            gap: 40px;
+        }
+        @media (max-width: 570px) {
+            gap: 30px;
+        }
     }
     &SubTitle {
         text-decoration: underline;
@@ -20,5 +38,14 @@
         li {
             list-style: disc;
         }
+    }
+    @media (max-width: 1280px) {
+        gap: 50px;
+    }
+    @media (max-width: 810px) {
+        gap: 40px;
+    }
+    @media (max-width: 570px) {
+        gap: 30px;
     }
 }

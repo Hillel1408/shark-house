@@ -9,5 +9,8 @@
         @media (max-width: 1080px) {
             grid-template-columns: 1fr;
         }
+        @media (max-width: 810px) {
+            row-gap: 40px;
+        }
     }
 }

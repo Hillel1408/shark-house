@@ -21,24 +21,45 @@
 .title {
     font-weight: 700;
     font-size: 50px;
-    line-height: 60px;
+    line-height: calc(60 / 50 * 100%);
     color: #c0b1a3;
+    @media (max-width: 810px) {
+        font-size: 40px;
+    }
+    @media (max-width: 570px) {
+        font-size: 30px;
+    }
 }
 .sub-title {
     font-weight: 700;
     font-size: 45px;
-    line-height: 54px;
+    line-height: calc(54 / 45 * 100%);
     color: #c0b1a3;
+    @media (max-width: 810px) {
+        font-size: 35px;
+    }
+    @media (max-width: 570px) {
+        font-size: 25px;
+    }
 }
 .text {
     font-size: 50px;
-    line-height: 60px;
+    line-height: calc(60 / 50 * 100%);
     color: #c0b1a3;
+    @media (max-width: 1280px) {
+        font-size: 40px;
+    }
+    @media (max-width: 810px) {
+        font-size: 30px;
+    }
+    @media (max-width: 570px) {
+        font-size: 20px;
+    }
 }
 .label {
     font-weight: 700;
     font-size: 30px;
-    line-height: 36px;
+    line-height: calc(36 / 30 * 100%);
     color: #d9cbb6;
     display: grid;
     grid-template-columns: 240px auto;

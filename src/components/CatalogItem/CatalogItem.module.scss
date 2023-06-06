@@ -21,6 +21,12 @@
             color: #c0b1a3;
             font-size: 35px;
             line-height: 40px;
+            @media (max-width: 810px) {
+                font-size: 28px;
+            }
+            @media (max-width: 570px) {
+                font-size: 22px;
+            }
         }
         &Images {
             display: flex;
