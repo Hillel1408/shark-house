@@ -43,6 +43,9 @@ function Header() {
                             <li>
                                 <NavLink to="/">Каталог</NavLink>
                             </li>
+                            <li>
+                                <NavLink to="/order">Заказ</NavLink>
+                            </li>
                         </ul>
                     </nav>
                 </div>

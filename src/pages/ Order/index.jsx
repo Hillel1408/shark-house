@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { CustomCheckbox } from '../../components/CustomCheckbox';
 import styles from './Order.module.scss';
 
 function Order() {
@@ -16,7 +17,7 @@ function Order() {
                 <label className="label">
                     Самовывоз
                     <div>
-                        <input type="checkbox" />
+                        <CustomCheckbox />
                         ул. 3-е Почтовое отделение, 98А стр 1, Москва,
                         Московская обл., 140014
                     </div>
