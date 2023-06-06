@@ -30,3 +30,38 @@ main {
     line-height: 60px;
     color: #c0b1a3;
 }
+.label {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #d9cbb6;
+    display: grid;
+    grid-template-columns: 240px auto;
+    align-items: center;
+    gap: 25px;
+    text-align: right;
+    & > input:not([type='checkbox']),
+    & > div {
+        width: 500px;
+        height: 73px;
+        background: #ecebe9;
+        border-radius: 20px;
+    }
+    & > div {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #8d8989;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding: 10px 36px;
+        gap: 20px;
+    }
+    & > textarea {
+        width: 500px;
+        height: 140px;
+        background: #ecebe9;
+        border-radius: 20px;
+    }
+}
