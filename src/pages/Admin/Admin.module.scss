@@ -1,7 +1,6 @@
 .admin {
     table {
         border-collapse: collapse;
-        margin-bottom: 30px;
         thead {
             background-color: #c0b1a3;
             tr {
@@ -28,6 +27,7 @@
         }
     }
     &TableWrapper {
+        margin-bottom: 30px;
         @media (max-width: 810px) {
             overflow: auto;
         }
