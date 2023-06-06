@@ -7,6 +7,15 @@
             width: 100%;
             height: 254px;
             object-fit: cover;
+            @media (max-width: 1080px) {
+                height: 473px;
+            }
+            @media (max-width: 810px) {
+                height: 300px;
+            }
+            @media (max-width: 570px) {
+                height: 200px;
+            }
         }
         &Title {
             color: #c0b1a3;
@@ -17,6 +26,13 @@
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
+            @media (max-width: 1080px) {
+                gap: 26px;
+                justify-content: center;
+            }
+            @media (max-width: 810px) {
+                gap: 10px;
+            }
         }
         &Image {
             width: 48px;
@@ -24,6 +40,24 @@
             img {
                 height: 47px;
                 object-fit: cover;
+                @media (max-width: 1080px) {
+                    height: 150px;
+                }
+                @media (max-width: 810px) {
+                    height: 60px;
+                }
+                @media (max-width: 570px) {
+                    height: 40px;
+                }
+            }
+            @media (max-width: 1080px) {
+                width: 157px;
+            }
+            @media (max-width: 810px) {
+                width: 60px;
+            }
+            @media (max-width: 570px) {
+                width: 40px;
             }
         }
         &Flex {
