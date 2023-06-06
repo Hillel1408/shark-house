@@ -1,0 +1,35 @@
+.admin {
+    table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+        thead {
+            background-color: #c0b1a3;
+            tr {
+                td {
+                    color: white;
+                }
+            }
+        }
+        tr {
+            td {
+                border: 1px solid #c0b1a3;
+                padding: 10px;
+                color: #c0b1a3;
+            }
+        }
+        @media (max-width: 810px) {
+            width: 800px;
+        }
+    }
+    &Edit,
+    &Delete {
+        svg {
+            cursor: pointer;
+        }
+    }
+    &TableWrapper {
+        @media (max-width: 810px) {
+            overflow: auto;
+        }
+    }
+}

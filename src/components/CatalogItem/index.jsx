@@ -41,7 +41,7 @@ function CatalogItem() {
             </div>
             <div className={styles.catalogItemFlex}>
                 <span className={styles.catalogItemTitle}>75,000 руб.</span>
-                <button className={styles.catalogItemBtn}>Купить</button>
+                <button className="btn">Купить</button>
             </div>
         </div>
     );

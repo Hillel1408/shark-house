@@ -5,6 +5,7 @@ import { Delivery } from './pages/Delivery';
 import { Catalog } from './pages/Catalog';
 import { Order } from './pages/ Order';
 import { Footer } from './components/Footer';
+import { Admin } from './pages/Admin';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/globals.scss';
 
@@ -18,6 +19,7 @@ function App() {
                     <Route path="/about-us" element={<AboutUs />} />
                     <Route path="/delivery" element={<Delivery />} />
                     <Route path="/order" element={<Order />} />
+                    <Route path="/admin" element={<Admin />} />
                 </Routes>
             </main>
             <Footer />
