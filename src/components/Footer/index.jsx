@@ -7,11 +7,7 @@ function Footer() {
         <footer className={styles.footer}>
             <div className={classNames('_container', styles.footerFlex)}>
                 <NavLink to="/">
-                    <img
-                        className={styles.footerLogo}
-                        src="/shark-house/logo.png"
-                        alt=""
-                    />
+                    <img className={styles.footerLogo} src="/logo.png" alt="" />
                 </NavLink>
                 <NavLink to="/admin" className={styles.footerLink}>
                     Вход

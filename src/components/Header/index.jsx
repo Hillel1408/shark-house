@@ -27,11 +27,7 @@ function Header() {
         <header className={styles.header}>
             <div className={classNames('_container', styles.headerContainer)}>
                 <NavLink to="/">
-                    <img
-                        className={styles.headerLogo}
-                        src="/shark-house/logo.png"
-                        alt=""
-                    />
+                    <img className={styles.headerLogo} src="/logo.png" alt="" />
                 </NavLink>
                 <div className={classNames(styles.headerFlex, 'header-flex')}>
                     <div
@@ -41,17 +37,17 @@ function Header() {
                         <ul>
                             <li>
                                 <a href="/">
-                                    <img src="/shark-house/icon-1.svg" alt="" />
+                                    <img src="/icon-1.svg" alt="" />
                                 </a>
                             </li>
                             <li>
                                 <a href="/">
-                                    <img src="/shark-house/icon-2.svg" alt="" />
+                                    <img src="/icon-2.svg" alt="" />
                                 </a>
                             </li>
                             <li>
                                 <a href="/">
-                                    <img src="/shark-house/icon-3.svg" alt="" />
+                                    <img src="/icon-3.svg" alt="" />
                                 </a>
                             </li>
                         </ul>
