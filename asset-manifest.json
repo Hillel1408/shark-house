@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/shark-house/static/css/main.5c0733ef.css",
-    "main.js": "/shark-house/static/js/main.d1ba07a4.js",
+    "main.css": "/shark-house/static/css/main.9d3fd11a.css",
+    "main.js": "/shark-house/static/js/main.b34ac09f.js",
     "static/media/Tahoma-Regular.woff": "/shark-house/static/media/Tahoma-Regular.6468454568229fbbbfd2.woff",
     "index.html": "/shark-house/index.html",
-    "main.5c0733ef.css.map": "/shark-house/static/css/main.5c0733ef.css.map",
-    "main.d1ba07a4.js.map": "/shark-house/static/js/main.d1ba07a4.js.map"
+    "main.9d3fd11a.css.map": "/shark-house/static/css/main.9d3fd11a.css.map",
+    "main.b34ac09f.js.map": "/shark-house/static/js/main.b34ac09f.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c0733ef.css",
-    "static/js/main.d1ba07a4.js"
+    "static/css/main.9d3fd11a.css",
+    "static/js/main.b34ac09f.js"
   ]
 }
